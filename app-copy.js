@@ -1,11 +1,8 @@
 var context, soundBuffer, source, analyser;
-var dataArr = new Uint8Array(50)
+var dataArr = new Uint8Array(100)
 var svgHeight = '300';
 var svgWidth = '1200';
 var padding = '1';
-
-
-
 
 function init () {
  try {
@@ -17,7 +14,6 @@ function init () {
     alert('Web Audio API is not supported in this browser');
   }
 }
-
 
 // repalce with fetch  later
 function loadSound(url) {
